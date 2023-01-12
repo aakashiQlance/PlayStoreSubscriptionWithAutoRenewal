@@ -1,20 +1,21 @@
-package com.aakash.playstoresubscriptionwithautorenewal
+package com.aakash.playstoresubscriptionwithautorenewal.purchase
 
 import android.app.Activity
 import android.os.Build
 import android.util.Log
 import android.widget.Toast
+import com.aakash.playstoresubscriptionwithautorenewal.R
 import com.aakash.playstoresubscriptionwithautorenewal.common.CustomToast
+import com.aakash.playstoresubscriptionwithautorenewal.common.ReusedMethod.Companion.printLog
 import com.android.billingclient.api.*
 import com.android.billingclient.api.BillingClient
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import org.json.JSONObject
 import java.util.ArrayList
 
 
-class BillingClient(
+public class BillingClient(
     var activityContext: Activity,
     var subscriptionList: List<String>,
     var function: (String) -> Unit,
@@ -176,7 +177,5 @@ class BillingClient(
         CustomToast.showToast(activityContext, message)
     }
 
-    private fun printLog(message: String) {
-        Log.i(TAG, message)
-    }
+
 }
