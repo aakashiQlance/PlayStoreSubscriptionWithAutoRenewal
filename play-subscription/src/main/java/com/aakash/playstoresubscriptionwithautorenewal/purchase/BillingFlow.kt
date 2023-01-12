@@ -2,7 +2,6 @@ package com.aakash.playstoresubscriptionwithautorenewal.purchase
 
 import android.app.Activity
 import android.os.Build
-import android.util.Log
 import android.widget.Toast
 import com.aakash.playstoresubscriptionwithautorenewal.R
 import com.aakash.playstoresubscriptionwithautorenewal.common.CustomToast
@@ -15,7 +14,7 @@ import kotlinx.coroutines.launch
 import java.util.ArrayList
 
 
-public class BillingClient(
+public class BillingFlow(
     var activityContext: Activity,
     var subscriptionList: List<String>,
     var function: (String) -> Unit,
