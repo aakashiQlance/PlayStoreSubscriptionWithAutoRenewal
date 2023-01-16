@@ -9,5 +9,7 @@ object Constants {
     const val REDIRECT_URI = "redirect_uri"
     const val API_KEY = "api_key"
     const val REFRESH_TOKEN = "refresh_token"
+    const val ACCESS_TOKEN_EXPIRY_TIME = "access_token_expiry_time"
+    const val PACKAGE_NAME = "package_name"
 
 }

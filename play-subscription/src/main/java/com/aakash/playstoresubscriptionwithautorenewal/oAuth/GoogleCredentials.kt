@@ -10,11 +10,13 @@ class GoogleCredentials {
         clientSecret: String,
         api_key: String,
         redirect_uri: String,
+        package_name:String
     ) {
         SharedPreferenceManager.putString(Constants.CLIENT_ID, clientId)
         SharedPreferenceManager.putString(Constants.CLIENT_SECRET, clientSecret)
         SharedPreferenceManager.putString(Constants.API_KEY, api_key)
         SharedPreferenceManager.putString(Constants.REDIRECT_URI, redirect_uri)
+        SharedPreferenceManager.putString(Constants.PACKAGE_NAME, package_name)
     }
 
 

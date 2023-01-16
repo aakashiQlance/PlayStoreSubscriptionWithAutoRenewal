@@ -5,11 +5,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitBuilder {
 
-    final val BASE_URL = "https://www.googleapis.com/"
 
-    fun getRetrofitClient(): ApiEndPoint {
+    fun getRetrofitClient(BASE_URl:String): ApiEndPoint {
         val retrofit = Retrofit.Builder()
-            .baseUrl(BASE_URL)
+            .baseUrl(BASE_URl)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
